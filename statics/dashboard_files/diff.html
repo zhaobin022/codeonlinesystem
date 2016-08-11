@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/zhaobin022/Desktop/H+v4.1.0/diff.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 文本对比</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="file:///C:/Users/zhaobin022/Desktop/H+v4.1.0/favicon.ico"> <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome.min.css" rel="stylesheet">
+
+    <link href="animate.min.css" rel="stylesheet">
+    <link href="style.min.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>文本对比插件</h5>
+                        </div>
+
+                        <div class="ibox-content">
+
+                            <strong>jQuery.PrettyTextDiff</strong>
+                            <p>
+                                包含在Google的diff_match_patch库中
+                                <br>
+                                您可以通过为要比对的文本添加<code>.original</code>和<code>.changed</code>来比对两段文字的差别。
+                            </p>
+
+                            <div class="well">
+                                <h3 class="m-t-lg">标准示例</h3>
+
+                                <div class="row diff-wrapper">
+                                    <div class="col-md-4">
+                                        <h4>原文本</h4>
+
+                                        <div class="original">要对文本文件的进行比较的时候，可以考虑使用google-diff-match-patch，它可以进行比较、匹配和生成补丁的操作，这里将展示一个简单文本比较的例子。</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>修改过的文本</h4>
+
+                                        <div class="changed">要对文本进行比较的时候，可以考虑使用 google-diff-match-patch，它可以进行比较、匹配和生成补丁的操作，我们在这里展示一个简单的例子。首先我们必须接定好文本比较后的输出。假设我们有两段文本“123456789”和“012356889”，然后我们希望输出他们的“差异”，可是这个“差异”怎么表示呢？</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>对比结果：</h4>
+
+                                        <div class="diff1"><span>要对文本</span><del>文件的</del><span>进行比较的时候，可以考虑使用</span><ins> </ins><span>google-diff-match-patch，它可以进行比较、匹配和生成补丁的操作，</span><ins>我们在</ins><span>这里</span><del>将</del><span>展示一个简单</span><del>文本比较</del><span>的例子。</span><ins>首先我们必须接定好文本比较后的输出。假设我们有两段文本“123456789”和“012356889”，然后我们希望输出他们的“差异”，可是这个“差异”怎么表示呢？</ins></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="m-t-lg">作为函数参数</h3>
+                            <p>
+                                当文本域的文本发生变化时，自动实时输出结果。
+                            </p>
+                            <div class="row diff-wrapper2">
+                                <div class="col-md-4">
+                                    <h4>原文本</h4>
+                                    <textarea class="form-control diff-textarea" id="original" rows="6">百度新闻是包含海量资讯的新闻服务平台,真实反映每时每刻的新闻热点。您可以搜索新闻事件、人物动态、产品资讯等,快速了解它们的最新进展。
+                                    </textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>对比结果：</h4>
+                                    <div class="diff2"><ins>“</ins><span>百度新闻</span><ins>”</ins><span>是包含海量资讯的新闻服务</span><ins>性质的新闻</ins><span>平台</span><del>,</del><ins>，</ins><span>真实反映</span><del>每时每刻的</del><span>新闻热点。您可以搜索新闻事件、</span><ins>热点话题、</ins><span>人物动态、</span><del>产品</del><span>资讯等</span><del>,</del><ins>，</ins><span>快速了解它们的最新进展。<br>                                    </span></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>新文本</h4>
+                                    <textarea class="form-control diff-textarea" id="changed" rows="6">“百度新闻”是包含海量资讯的新闻服务性质的新闻平台，真实反映新闻热点。您可以搜索新闻事件、热点话题、人物动态、资讯等，快速了解它们的最新进展。
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="content.min(1).js"></script>
+    <script src="diff_match_patch.js"></script>
+    <script src="jquery.pretty-text-diff.min.js"></script>
+    <script>
+        $(document).ready(function(){$(".diff-wrapper").prettyTextDiff({diffContainer:".diff1"});$(".diff-wrapper2").prettyTextDiff({originalContent:$("#original").val(),changedContent:$("#changed").val(),diffContainer:".diff2"});$(".diff-textarea").on("change keyup",function(){$(".diff-wrapper2").prettyTextDiff({originalContent:$("#original").val(),changedContent:$("#changed").val(),diffContainer:".diff2"})})});
+    </script>
+
+
+
+</body></html>

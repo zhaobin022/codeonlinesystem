@@ -1,0 +1,1525 @@
+[2016-05-05 11:46:00,829][404][<WSGIRequest: GET '/reset_password/favicon.ico'>] Not Found: /reset_password/favicon.ico
+[2016-05-05 11:48:32,943][500][<WSGIRequest: GET '/reset_password/'>] Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 550, in reset_password
+    return render(request, 'reset_password.html', {'form':form})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1014, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 1094, in generic_tag_compiler
+    defaults, takes_context, name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 1066, in parse_bits
+    args.append(parser.compile_filter(bit))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '|' from '|'
+[2016-05-05 11:48:45,162][500][<WSGIRequest: GET '/reset_password/'>] Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 550, in reset_password
+    return render(request, 'reset_password.html', {'form':form})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1014, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 1094, in generic_tag_compiler
+    defaults, takes_context, name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 1066, in parse_bits
+    args.append(parser.compile_filter(bit))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '|' from '|'
+[2016-05-05 12:00:08,297][404][<WSGIRequest: GET '/ad,om'>] Not Found: /ad,om
+[2016-05-05 12:35:54,675][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:35:59,898][404][<WSGIRequest: GET '/login/ie.html'>] Not Found: /login/ie.html
+[2016-05-05 12:36:00,921][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:36:02,661][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:36:02,712][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:36:04,413][404][<WSGIRequest: GET '/login/ie.html'>] Not Found: /login/ie.html
+[2016-05-05 12:36:04,561][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:36:04,578][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:36:05,390][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:36:05,418][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 12:36:29,093][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 17:08:16,503][500][<WSGIRequest: GET '/'>] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 22, in index
+    return render(request, 'index.html', {})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 89, in render
+    output = self.filter_expression.resolve(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 647, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 787, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 825, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related.py", line 460, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 328, in get
+    num = len(clone)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 144, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'codeonline_userprofile.team_leader_id' in 'field list'")
+[2016-05-05 17:33:41,407][403][<WSGIRequest: POST '/get_reqest_list_json_api/'>] Forbidden (CSRF token missing or incorrect.): /get_reqest_list_json_api/
+[2016-05-05 17:37:04,735][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 17:57:41,044][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 18:32:44,026][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 18:32:44,027][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 21:34:34,926][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 21:34:55,862][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-05 21:34:55,868][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-06 10:33:48,157][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-05-06 10:55:07,088][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-01 11:38:37,542][500][<WSGIRequest: GET '/admin/'>] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 254, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 408, in index
+    perms = model_admin.get_model_perms(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 656, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 501, in has_add_permission
+    return request.user.has_perm("%s.%s" % (opts.app_label, codename))
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'has_perm'
+[2016-08-01 11:39:07,948][500][<WSGIRequest: GET '/admin/'>] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 254, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 408, in index
+    perms = model_admin.get_model_perms(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 656, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 501, in has_add_permission
+    return request.user.has_perm("%s.%s" % (opts.app_label, codename))
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'has_perm'
+[2016-08-01 11:39:08,244][500][<WSGIRequest: GET '/admin/'>] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 254, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 408, in index
+    perms = model_admin.get_model_perms(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 656, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 501, in has_add_permission
+    return request.user.has_perm("%s.%s" % (opts.app_label, codename))
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'has_perm'
+[2016-08-01 11:41:56,878][500][<WSGIRequest: GET '/admin/codeonline/user/1/'>] Internal Server Error: /admin/codeonline/user/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/admin.py", line 79, in get_form
+    return super(UserAdmin, self).get_form(request, obj, **defaults)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_of_birth) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+[2016-08-01 11:42:40,184][500][<WSGIRequest: GET '/admin/codeonline/user/1/'>] Internal Server Error: /admin/codeonline/user/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/admin.py", line 79, in get_form
+    return super(UserAdmin, self).get_form(request, obj, **defaults)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) () specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+[2016-08-01 11:42:41,618][500][<WSGIRequest: GET '/admin/codeonline/user/1/'>] Internal Server Error: /admin/codeonline/user/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/admin.py", line 79, in get_form
+    return super(UserAdmin, self).get_form(request, obj, **defaults)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) () specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+[2016-08-01 11:42:56,988][500][<WSGIRequest: GET '/admin/codeonline/user/1/'>] Internal Server Error: /admin/codeonline/user/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/admin.py", line 79, in get_form
+    return super(UserAdmin, self).get_form(request, obj, **defaults)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) () specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+[2016-08-01 12:23:24,196][404][<WSGIRequest: GET '/admin/codeonline/userprofile/'>] Not Found: /admin/codeonline/userprofile/
+[2016-08-01 13:50:12,208][500][<WSGIRequest: POST '/admin/codeonline/user/add/'>] Internal Server Error: /admin/codeonline/user/add/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/admin.py", line 121, in add_view
+    extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1467, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1078, in save_model
+    obj.save()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry '' for key 'email'")
+[2016-08-01 13:50:22,501][500][<WSGIRequest: POST '/admin/codeonline/user/add/'>] Internal Server Error: /admin/codeonline/user/add/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/admin.py", line 121, in add_view
+    extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1467, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1078, in save_model
+    obj.save()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry '' for key 'email'")
+[2016-08-01 14:22:14,541][500][<WSGIRequest: GET '/admin/codeonline/user/9/'>] Internal Server Error: /admin/codeonline/user/9/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 159, in render
+    return template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 211, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 329, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 329, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/html.py", line 390, in <lambda>
+    klass.__unicode__ = lambda self: mark_safe(klass_unicode(self))
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/forms.py", line 537, in __str__
+    return self.as_widget()
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/forms.py", line 593, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/widgets.py", line 292, in render
+    'widget': self.widget.render(name, value, *args, **kwargs),
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/widgets.py", line 48, in render
+    output = [super(FilteredSelectMultiple, self).render(name, value, attrs, choices)]
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/widgets.py", line 585, in render
+    options = self.render_options(choices, value)
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/widgets.py", line 539, in render_options
+    for option_value, option_label in chain(self.choices, choices):
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/models.py", line 1104, in __iter__
+    yield self.choice(obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/models.py", line 1111, in choice
+    return (self.field.prepare_value(obj), self.field.label_from_instance(obj))
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/models.py", line 1182, in label_from_instance
+    return smart_text(obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/encoding.py", line 56, in smart_text
+    return force_text(s, encoding, strings_only, errors)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/encoding.py", line 92, in force_text
+    s = six.text_type(s)
+TypeError: coercing to Unicode: need string or buffer, NoneType found
+[2016-08-01 14:42:47,697][500][<WSGIRequest: GET '/'>] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 22, in index
+    return render(request, 'index.html', {})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for '' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:44:24,423][500][<WSGIRequest: GET '/'>] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 22, in index
+    return render(request, 'index.html', {})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'online_request_list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:44:25,375][500][<WSGIRequest: GET '/'>] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 22, in index
+    return render(request, 'index.html', {})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'online_request_list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:44:27,150][500][<WSGIRequest: GET '/'>] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 22, in index
+    return render(request, 'index.html', {})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'online_request_list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:45:03,663][500][<WSGIRequest: GET '/'>] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 22, in index
+    return render(request, 'index.html', {})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'online_request_list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:51:42,404][500][<WSGIRequest: POST '/get_reqest_list_json_api/'>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.UserGroups.objects.get(group_name='developer_group')
+AttributeError: 'module' object has no attribute 'UserGroups'
+[2016-08-01 14:52:04,428][500][<WSGIRequest: POST '/get_reqest_list_json_api/'>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.UserGroups.objects.get(group_name='developer_group')
+AttributeError: 'module' object has no attribute 'UserGroups'
+[2016-08-01 14:54:36,228][404][<WSGIRequest: GET '/reset_password/favicon.ico'>] Not Found: /reset_password/favicon.ico
+[2016-08-01 14:55:00,995][500][<WSGIRequest: GET '/online_request_list/'>] Internal Server Error: /online_request_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 31, in online_request_list
+    return render(request, 'online_request_list.html', {'request_list': request_list})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'get_reqest_list_json_api' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:55:45,345][500][<WSGIRequest: GET '/online_request_list/'>] Internal Server Error: /online_request_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 31, in online_request_list
+    return render(request, 'online_request_list.html', {'request_list': request_list})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'get_reqest_list_json_api' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:56:14,609][500][<WSGIRequest: GET '/online_request_list/'>] Internal Server Error: /online_request_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 31, in online_request_list
+    return render(request, 'online_request_list.html', {'request_list': request_list})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'get_reqest_list_json_api' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2016-08-01 14:56:33,882][500][<WSGIRequest: POST '/get_reqest_list_json_api/'>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.UserGroups.objects.get(group_name='developer_group')
+AttributeError: 'module' object has no attribute 'UserGroups'
+[2016-08-01 14:56:41,569][500][<WSGIRequest: POST '/get_reqest_list_json_api/'>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.UserGroups.objects.get(group_name='developer_group')
+AttributeError: 'module' object has no attribute 'UserGroups'
+[2016-08-01 15:16:10,415][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.GroupProfile.objects.get('develop_manager')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1147, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack
+[2016-08-01 15:16:56,316][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.GroupProfile.objects.get('develop_manager')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1147, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack
+[2016-08-01 15:17:17,586][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.GroupProfile.objects.get('develop_manager')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1147, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack
+[2016-08-01 15:18:48,444][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 325, in get_reqest_list_json_api
+    developer_group = models.GroupProfile.objects.get('develop_manager')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1147, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack
+[2016-08-01 15:20:31,643][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 326, in get_reqest_list_json_api
+    developer_group = models.GroupProfile.objects.get('develop_manager')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1147, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack
+[2016-08-01 15:27:05,426][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 328, in get_reqest_list_json_api
+    developer_group_profile = developer_group.groupfile
+AttributeError: 'Group' object has no attribute 'groupfile'
+[2016-08-01 15:28:46,273][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 328, in get_reqest_list_json_api
+    developer_group_profile = developer_group.groupfile
+AttributeError: 'Group' object has no attribute 'groupfile'
+[2016-08-01 15:30:06,529][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 330, in get_reqest_list_json_api
+    developer_mans = developer_group.member.select_related().values()
+AttributeError: 'Group' object has no attribute 'member'
+[2016-08-01 15:30:29,946][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 338, in get_reqest_list_json_api
+    product_group = models.User.objects.get(group_name='product_manager')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1150, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1036, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1397, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'group_name' into field. Choices are: alias, description, developer_fun_confirm_before_online, email, group_admin_tag, groupprofile, groups, id, is_active, is_staff, is_superuser, last_login, logentry, maintenance_manager_comfirm, maintenance_persion_comfirm, password, product_man_confirm_after_online, product_man_confirm_before_online, require_side, team_leader_set, team_member, technical_man_fun_confirm_online, test_confirm_before_online, test_man_confirm_after_online, user_permissions, username, white_box_test
+[2016-08-01 15:33:04,347][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 338, in get_reqest_list_json_api
+    product_group = models.User.objects.get(group_name='product_manager')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1150, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1036, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1397, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'group_name' into field. Choices are: alias, description, developer_fun_confirm_before_online, email, group_admin_tag, groupprofile, groups, id, is_active, is_staff, is_superuser, last_login, logentry, maintenance_manager_comfirm, maintenance_persion_comfirm, password, product_man_confirm_after_online, product_man_confirm_before_online, require_side, team_leader_set, team_member, technical_man_fun_confirm_online, test_confirm_before_online, test_man_confirm_after_online, user_permissions, username, white_box_test
+[2016-08-01 15:41:41,772][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 330, in get_reqest_list_json_api
+    ret['data']['developer']['all_develper_mans'] = developer_mans
+KeyError: 'developer'
+[2016-08-01 15:44:19,887][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 330, in get_reqest_list_json_api
+    ret['data']['developer']['all_develper_mans'] = developer_mans
+KeyError: 'developer'
+[2016-08-01 15:47:41,775][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 347, in get_reqest_list_json_api
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [{'alias': u'\u6bd5\u52a1\u9f99', 'id': 4L}, {'alias': u'\u51af\u65b0', 'id': 14L}] is not JSON serializable
+[2016-08-01 15:49:36,324][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 347, in get_reqest_list_json_api
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [{'alias': u'\u6bd5\u52a1\u9f99', 'id': 4L}, {'alias': u'\u51af\u65b0', 'id': 14L}] is not JSON serializable
+[2016-08-01 15:49:44,402][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 347, in get_reqest_list_json_api
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [{'alias': u'\u6bd5\u52a1\u9f99', 'id': 4L}, {'alias': u'\u51af\u65b0', 'id': 14L}] is not JSON serializable
+[2016-08-01 15:52:49,396][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 347, in get_reqest_list_json_api
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [{'alias': u'\u6bd5\u52a1\u9f99', 'id': 4L}, {'alias': u'\u51af\u65b0', 'id': 14L}] is not JSON serializable
+[2016-08-01 15:54:06,913][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id='>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 348, in get_reqest_list_json_api
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [{'alias': u'\u6bd5\u52a1\u9f99', 'id': 4L}, {'alias': u'\u51af\u65b0', 'id': 14L}] is not JSON serializable
+[2016-08-01 15:56:27,999][500][<WSGIRequest: GET '/get_reqest_list_json_api/'>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 350, in get_reqest_list_json_api
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [{'alias': u'\u6bd5\u52a1\u9f99', 'id': 4L}, {'alias': u'\u51af\u65b0', 'id': 14L}] is not JSON serializable
+[2016-08-01 17:23:59,778][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 381, in update_request_api
+    if str(request.user.userprofile.id) not in require_side:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'userprofile'
+[2016-08-01 17:31:54,923][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 390, in update_request_api
+    online_request = models.OnlineRequest.objects.create(**submit_dic)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 346, in create
+    obj = self.model(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 480, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'suggest_update_time' is an invalid keyword argument for this function
+[2016-08-01 17:56:18,974][500][<WSGIRequest: GET '/admin/auth/group/'>] Internal Server Error: /admin/auth/group/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/codeonlinesystem/codeonlinesystem/urls.py", line 18, in <module>
+    from codeonline import views as codeonline_view
+  File "/opt/codeonlinesystem/codeonline/views.py", line 76
+    if request_item.online_request_status == 1 and request.user.== 'develop_manager':
+                                                                 ^
+SyntaxError: invalid syntax
+[2016-08-02 09:38:36,440][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-02 09:39:02,523][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-02 09:39:02,524][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-02 10:16:45,054][500][<WSGIRequest: GET '/get_reqest_list_json_api/?csrfmiddlewaretoken=h4vRatLnto5xmIi0eLERZAoBptEdFeVR&id=3'>] Internal Server Error: /get_reqest_list_json_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 318, in get_reqest_list_json_api
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: [] is not JSON serializable
+[2016-08-02 14:39:44,372][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 354, in update_request_api
+    online_request.developer_fun_confirm_before_online = request.user.userprofile
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'userprofile'
+[2016-08-02 14:46:04,413][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 361, in update_request_api
+    developer_set = models.UserProfile.objects.filter(id__in=developers)
+AttributeError: 'module' object has no attribute 'UserProfile'
+[2016-08-02 14:48:16,958][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 363, in update_request_api
+    online_request.developer.add(l)
+AttributeError: 'OnlineRequest' object has no attribute 'developer'
+[2016-08-02 15:19:44,078][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 368, in update_request_api
+    elif online_request_status == '2' and request.user.userprofile.group.group_name == 'testing' and request.user.userprofile.admin_tag:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'userprofile'
+[2016-08-02 15:24:28,122][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 375, in update_request_api
+    test_confirm_before_online.append(str(request.user.userprofile.id))
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'userprofile'
+[2016-08-02 15:25:53,596][500][<WSGIRequest: POST '/update_request_api/'>] Internal Server Error: /update_request_api/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 383, in update_request_api
+    elif online_request_status == '3' and request.user.userprofile.group.group_name == 'technical_manager':
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 226, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'userprofile'
+[2016-08-02 16:19:47,820][500][<WSGIRequest: GET '/online_request_list/'>] Internal Server Error: /online_request_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 34, in online_request_list
+    return render(request, 'online_request_list.html', {'request_list': request_list})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1014, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endfor', expected 'elif', 'else' or 'endif'
+[2016-08-02 16:55:03,234][403][<WSGIRequest: POST '/login/'>] Forbidden (CSRF token missing or incorrect.): /login/
+[2016-08-02 16:55:10,938][403][<WSGIRequest: POST '/login/'>] Forbidden (CSRF token missing or incorrect.): /login/
+[2016-08-02 16:55:11,664][403][<WSGIRequest: POST '/login/'>] Forbidden (CSRF token missing or incorrect.): /login/
+[2016-08-02 16:55:11,840][403][<WSGIRequest: POST '/login/'>] Forbidden (CSRF token missing or incorrect.): /login/
+[2016-08-02 16:55:12,015][403][<WSGIRequest: POST '/login/'>] Forbidden (CSRF token missing or incorrect.): /login/
+[2016-08-02 16:55:31,705][500][<WSGIRequest: GET '/dashboard/'>] Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 449, in dashboard
+    return render(request, 'dashboard.html', {"ret":ret})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'online_request_list' with arguments '(1,)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['online_request_list/$']
+[2016-08-02 16:55:52,528][500][<WSGIRequest: GET '/dashboard/'>] Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 449, in dashboard
+    return render(request, 'dashboard.html', {"ret":ret})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'online_request_list' with arguments '(1,)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['online_request_list/$']
+[2016-08-02 17:01:43,546][500][<WSGIRequest: GET '/'>] Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 25, in index
+    return render(request, 'index.html', {})
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'online_request_list' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['online_request_list/(?P<online_request_status>[0-9]+)$']
+[2016-08-02 17:10:41,655][500][<WSGIRequest: GET '/online_request_list/?online_request_status=1'>] Internal Server Error: /online_request_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 32, in online_request_list
+    request_list = models.OnlineRequest.objects.filter(online_request_status==int(online_request_status)).order_by('-id')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1147, in build_filter
+    arg, value = filter_expr
+TypeError: 'bool' object is not iterable
+[2016-08-02 17:11:36,141][500][<WSGIRequest: GET '/online_request_list/?online_request_status=1'>] Internal Server Error: /online_request_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/codeonlinesystem/codeonline/views.py", line 32, in online_request_list
+    request_list = models.OnlineRequest.objects.filter(online_request_status==online_request_status).order_by('-id')
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 1147, in build_filter
+    arg, value = filter_expr
+TypeError: 'bool' object is not iterable
+[2016-08-02 17:13:21,235][404][<WSGIRequest: GET '/online_request_list/favicon.ico'>] Not Found: /online_request_list/favicon.ico
+[2016-08-02 17:22:03,807][403][<WSGIRequest: POST '/login/'>] Forbidden (CSRF token missing or incorrect.): /login/
+[2016-08-03 11:43:47,951][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-03 11:45:31,388][404][<WSGIRequest: GET '/online_request_list/favicon.ico'>] Not Found: /online_request_list/favicon.ico
+[2016-08-03 11:47:11,749][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-03 11:47:11,781][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-03 13:29:15,736][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-08 11:54:49,537][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-08 13:32:52,110][404][<WSGIRequest: GET '/reset_password/favicon.ico'>] Not Found: /reset_password/favicon.ico
+[2016-08-08 14:38:34,819][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-08 15:48:44,529][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-08 15:51:11,934][403][<WSGIRequest: POST '/login/'>] Forbidden (CSRF token missing or incorrect.): /login/
+[2016-08-08 15:51:57,954][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-08 15:51:58,090][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
